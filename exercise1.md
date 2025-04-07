@@ -1,0 +1,5 @@
+Let’s say a team of about 6 people are developing an app in Ruby and they want to set up a CI/CD practice/pipeline. With a team of this size, a cloud-based environment would probably be good enough and less expensive. The devs wouldn’t have to spend their limited time making and maintaining their own local CI environment, and the amount of CI runs would stay quite small as new features or versions would take longer to develop with few people, making the cost of a cloud-based CI low. 
+
+Ruby scripts don’t need to be compiled and it’s supported on the three main OS families. Automatic linting and formatting can be done with rubocop and testing with for example Rspec, which is included in Ruby’s standard library, or Capybara which is good for testing web apps specifically. 
+
+Instead of using Github Actions or Jenkins, the CI pipeline could be set up with TravisCI, which seems like a good general alternative. It’s open source, it supports Ruby, it’s cloud-based, but it does cost money which might be a problem in some cases, the cheapest pricing alternative seemed to be $13 per month. 
