@@ -48,6 +48,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMIT_MESSAGES: ${{ join(toJson(github.event.commits.*.message)) }}
           DEFAULT_BUMP: patch
-        if: ${{ github.event_name == 'push' && [[$COMMIT_MESSAGES != *"#skip"*]] }}
+        if: ${{ github.event_name == 'push' && 1 == 2 }}
         uses: anothrNick/github-tag-action@1.71.0
         
